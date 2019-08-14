@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-contact',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    $('#submitForm').on('click', function() {
+      $('#contact-form').submit();
+    });
+  }
 
   ngOnInit() {}
 }
