@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './comp/main/main.component';
 import { ContactComponent } from './comp/contact/contact.component';
 import { NavbarComponent } from './comp/navbar/navbar.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,8 @@ import { NavbarComponent } from './comp/navbar/navbar.component';
     ContactComponent,
     NavbarComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
