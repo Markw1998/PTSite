@@ -1,0 +1,10 @@
+.main {
+  background-image: url(../../../../src/assets/images/BgBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+a {
+  color: inherit;
+}
